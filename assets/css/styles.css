@@ -155,6 +155,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .video-shell { aspect-ratio: 16/9; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); background: #0c1724; }
 .video-shell iframe { width: 100%; height: 100%; border: 0; }
+.photo-shell { position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); background: #0c1724; }
+.photo-shell img { width: 100%; height: 100%; max-height: 560px; object-fit: cover; display: block; }
+.photo-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; background: linear-gradient(0deg, rgba(12,23,36,.82), transparent); color: #fff; font-size: .8rem; letter-spacing: .02em; }
 
 .quote-band { padding: 78px 0; background: #ede5d7; }
 .quote { max-width: 930px; margin: 0 auto; text-align: center; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.75rem, 3.5vw, 3.2rem); line-height: 1.22; }
@@ -234,4 +237,42 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Keynote banner: fixed strip above the header during the conference window */
+.keynote-banner {
+  position: fixed; inset: 0 0 auto 0; z-index: 1001;
+  background: linear-gradient(90deg, #0d2037, #173657);
+  border-bottom: 1px solid rgba(201,154,74,.35);
+}
+.keynote-banner-inner { display: flex; align-items: center; gap: 10px; padding: 9px 0; }
+.keynote-banner p { margin: 0; color: #fff; font-size: .85rem; letter-spacing: .01em; }
+.keynote-banner p strong { color: var(--gold-light); }
+.keynote-banner a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 2px; }
+.keynote-banner-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #e0a63a; flex: none;
+  box-shadow: 0 0 0 rgba(224,166,58,.6); animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(224,166,58,.55); }
+  70% { box-shadow: 0 0 0 8px rgba(224,166,58,0); }
+  100% { box-shadow: 0 0 0 0 rgba(224,166,58,0); }
+}
+.site-header { top: 38px; }
+.hero { padding-top: calc(150px + 38px); }
+@media (max-width: 720px) {
+  .keynote-banner p { font-size: .76rem; }
+  .site-header { top: 46px; }
+  .hero { padding-top: calc(108px + 46px); }
+}
+
+/* Boundary/disclosure note in About */
+.boundary-note { font-size: .92rem; color: var(--muted); font-style: italic; margin-top: 18px; }
+
+/* Speaking section: copy + in-action photo */
+.speaking-split { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+.speaking-visual img { width: 100%; height: 100%; max-height: 460px; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+@media (max-width: 900px) {
+  .speaking-split { grid-template-columns: 1fr; }
+  .speaking-visual img { max-height: 340px; }
 }
