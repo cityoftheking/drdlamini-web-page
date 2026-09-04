@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173657"/><stop offset="1" stop-color="#0a1728"/></linearGradient></defs>
+<rect width="800" height="1000" fill="url(#g)"/><circle cx="400" cy="390" r="150" fill="#d8c39c" opacity=".6"/><path d="M190 950c34-244 138-342 210-342s176 98 210 342" fill="#c99a4a" opacity=".36"/>
+<text x="400" y="900" text-anchor="middle" fill="#fff" opacity=".72" font-family="Arial" font-size="26">Portrait coming soon</text>
+</svg>
