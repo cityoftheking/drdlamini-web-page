@@ -245,33 +245,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .reveal { opacity: 1; transform: none; }
 }
 
-/* Keynote banner: fixed strip above the header during the conference window */
-.keynote-banner {
-  position: fixed; inset: 0 0 auto 0; z-index: 1001;
-  background: linear-gradient(90deg, #0d2037, #173657);
-  border-bottom: 1px solid rgba(201,154,74,.35);
-}
-.keynote-banner-inner { display: flex; align-items: center; gap: 10px; padding: 9px 0; }
-.keynote-banner p { margin: 0; color: #fff; font-size: .85rem; letter-spacing: .01em; }
-.keynote-banner p strong { color: var(--gold-light); }
-.keynote-banner a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 2px; }
-.keynote-banner-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: #e0a63a; flex: none;
-  box-shadow: 0 0 0 rgba(224,166,58,.6); animation: pulse-dot 2s infinite;
-}
-@keyframes pulse-dot {
-  0% { box-shadow: 0 0 0 0 rgba(224,166,58,.55); }
-  70% { box-shadow: 0 0 0 8px rgba(224,166,58,0); }
-  100% { box-shadow: 0 0 0 0 rgba(224,166,58,0); }
-}
-.site-header { top: 38px; }
-.hero { padding-top: calc(150px + 38px); }
-@media (max-width: 720px) {
-  .keynote-banner p { font-size: .76rem; }
-  .site-header { top: 46px; }
-  .hero { padding-top: calc(108px + 46px); }
-}
-
 /* Boundary/disclosure note in About */
 .boundary-note { font-size: .92rem; color: var(--muted); font-style: italic; margin-top: 18px; }
 
@@ -281,4 +254,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 900px) {
   .speaking-split { grid-template-columns: 1fr; }
   .speaking-visual img { max-height: 340px; }
+}
+
+/* Keynote recap: audience testimonial cards */
+.testimonial-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 8px; }
+.testimonial { margin: 0; padding: 26px 28px; border-radius: 20px; background: var(--cream); border-left: 3px solid var(--gold); }
+.testimonial p { margin: 0; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; font-style: italic; }
+@media (max-width: 760px) {
+  .testimonial-grid { grid-template-columns: 1fr; }
+}
+
+/* Keynote recap: photo gallery */
+.keynote-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 34px; }
+.keynote-gallery img { width: 100%; height: 260px; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow); }
+@media (max-width: 760px) {
+  .keynote-gallery { grid-template-columns: 1fr 1fr; }
+  .keynote-gallery img { height: 200px; }
 }
