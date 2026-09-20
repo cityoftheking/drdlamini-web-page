@@ -89,7 +89,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .event-gallery-portrait { grid-template-columns: 1fr 1fr; }
 .event-gallery-portrait figure { min-height: 560px; }
 .event-gallery-portrait img { object-position: center 30%; }
-.event-gallery-landscape { grid-template-columns: 1fr 1fr; }
+.event-gallery-landscape { grid-template-columns: 1fr 1fr; max-width: 1040px; margin-inline: auto; }
 .event-gallery-landscape figure { aspect-ratio: 4 / 3; }
 .event-gallery-landscape img { object-position: center; }
 .research-panel { padding: 46px; border-radius: 30px; background: linear-gradient(135deg, #132d4a 0%, #0d2037 100%); color: white; position: relative; overflow: hidden; }
