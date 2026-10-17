@@ -20,7 +20,7 @@ c.setFillColor(navy)
 c.setFont("Helvetica-Bold", 10)
 c.drawString(m, y, "DR. GEQIGULA DLAMINI")
 c.setFillColor(gold)
-c.drawRightString(W-m, y, "KEYNOTES · WORKSHOPS · ADVISORY")
+c.drawRightString(W-m, y, "KEYNOTES  |  WORKSHOPS  |  ADVISORY")
 y -= 30
 
 c.setFillColor(navy)
@@ -55,24 +55,31 @@ c.setFillColor(navy); c.setFont("Helvetica-Bold", 10); c.drawString(m, y, "SELEC
 y -= 18
 c.setFillColor(muted); c.setFont("Helvetica", 9)
 proof = [
-    "Closing keynote · Meeting of the Minds 2026",
+    "Closing keynote  |  Meeting of the Minds 2026",
     "Two-time University of the Pacific Changemakers presenter",
     "Doctoral Innovation in Research and Practice Award"
 ]
 for item in proof:
-    c.drawString(m+8, y, "• " + item); y -= 14
+    c.drawString(m+8, y, "- " + item); y -= 14
 
 y -= 8
-c.setFillColor(gold); c.setFont("Times-BoldItalic", 12); c.drawString(m, y, '“Terrific talk.”')
+c.setFillColor(gold); c.setFont("Times-BoldItalic", 12); c.drawString(m, y, '"Terrific talk."')
 c.setFillColor(muted); c.setFont("Helvetica", 7.5); c.drawString(m+115, y, "Meeting of the Minds conference attendee")
 y -= 20
-c.setFillColor(gold); c.setFont("Times-BoldItalic", 12); c.drawString(m, y, '“I love your messaging around empowerment.”')
+c.setFillColor(gold); c.setFont("Times-BoldItalic", 12); c.drawString(m, y, '"I love your messaging around empowerment."')
 c.setFillColor(muted); c.setFont("Helvetica", 7.5); c.drawString(m+255, y, "Meeting of the Minds conference attendee")
 
+y -= 15
+c.setFillColor(navy); c.setFont("Helvetica-Bold", 8)
+c.drawString(m, y, "RECORDED SPEAKING SAMPLE: UNIVERSITY OF THE PACIFIC CHANGEMAKERS")
+y -= 14
+c.setFillColor(muted); c.setFont("Helvetica", 8)
+c.drawString(m, y, "youtube.com/watch?v=AJW-Kt0LcdU (not a keynote reel)")
+c.linkURL("https://www.youtube.com/watch?v=AJW-Kt0LcdU", (m, y-2, m+330, y+12), relative=0)
 y -= 34
 c.setStrokeColor(gold); c.line(m, y, W-m, y)
 y -= 20
 c.setFillColor(navy); c.setFont("Helvetica-Bold", 10); c.drawString(m, y, "gq@drdlamini.com")
-c.setFont("Helvetica", 9); c.drawRightString(W-m, y, "drdlamini.com · linkedin.com/in/gdlamini · deeplyoptimistic.com")
+c.setFont("Helvetica", 9); c.drawRightString(W-m, y, "drdlamini.com  |  linkedin.com/in/gdlamini  |  deeplyoptimistic.com")
 c.save()
 print(OUT)

@@ -15,7 +15,7 @@ GitHub Pages is configured through the included `.github/workflows/deploy.yml` w
 
 ## Primary CTA
 Speaking and collaboration inquiries use:
-`mailto:g_dlamini@u.pacific.edu`
+`mailto:gq@drdlamini.com`
 
 ## External links
 - LinkedIn: https://www.linkedin.com/in/gdlamini
@@ -29,4 +29,5 @@ Speaking and collaboration inquiries use:
 - Research supports the broader leadership story rather than defining the whole site.
 - Mobile-first navigation and accessible focus behavior.
 - Minimal JavaScript and reduced-motion support.
-- No analytics or third-party tracking included by default.
+- GA4 (G-6072C87BK0) loads only after analytics consent. Visitors can manage preferences in the footer.
+- The Pages build generates `assets/dr-dlamini-speaker-one-sheet.pdf` from `scripts/generate_speaker_one_sheet.py` before deployment.
