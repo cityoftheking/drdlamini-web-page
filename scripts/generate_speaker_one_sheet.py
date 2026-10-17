@@ -30,7 +30,7 @@ y -= 24
 c.setFillColor(muted)
 c.setFont("Helvetica", 10.5)
 lines = [
-    "I help public-sector and mission-driven leaders put people at the center of technology",
+    "I help mission-driven organizations put people at the center of technology",
     "and organizational change, then translate that clarity into practical action."
 ]
 for line in lines:
