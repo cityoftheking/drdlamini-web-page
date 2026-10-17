@@ -46,7 +46,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .8fr; gap: clamp(42px, 7vw, 96px); align-items: center; position: relative; z-index: 2; }
 .hero-copy { max-width: 720px; }
 .statement { margin: 26px 0 0; max-width: 670px; color: #3f4d5a; font-size: clamp(1.08rem, 1.6vw, 1.32rem); }
-.hero-quote { margin: 26px 0 0; padding-left: 20px; border-left: 2px solid var(--gold); color: #56616c; font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; font-style: italic; }
+.hero-quote { margin: 26px 0 0; padding-left: 20px; border-left: 2px solid var(--gold); color: #56616c; font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; font-style: italic; } .hero-quote cite { display:block; margin-top:8px; font-family:Inter,ui-sans-serif,sans-serif; font-size:.72rem; font-style:normal; font-weight:800; letter-spacing:.09em; text-transform:uppercase; color:#7b6b52; } .hero-support { margin: 18px 0 0; max-width: 670px; color:#56616c; font-size:1.02rem; }
 .hero-visual { position: relative; min-height: 580px; }
 .portrait-frame { position: absolute; inset: 0; border-radius: 240px 240px 30px 30px; overflow: hidden; background: var(--navy); box-shadow: var(--shadow); }
 .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
@@ -82,7 +82,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .event-copy h3 { margin: 0; color: var(--navy); font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.06; letter-spacing: -.02em; }
 .event-copy p { color: #586571; }
 .review-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-.review-chip { margin: 0; padding: 11px 14px; border-radius: 999px; background: #f4efe5; border: 1px solid rgba(201,154,74,.26); color: #57482f; font-family: Georgia, "Times New Roman", serif; font-size: .98rem; }
+.review-chip { margin: 0; padding: 13px 15px; border-radius: 16px; background: #f4efe5; border: 1px solid rgba(201,154,74,.26); color: #57482f; font-family: Georgia, "Times New Roman", serif; font-size: .98rem; } .review-chip span { display:block; } .review-chip cite { display:block; margin-top:6px; font-family:Inter,ui-sans-serif,sans-serif; font-size:.66rem; font-style:normal; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:#7c6c53; }
 .event-gallery { display: grid; gap: 14px; }
 .event-gallery figure { margin: 0; overflow: hidden; border-radius: 22px; background: #d9dce0; }
 .event-gallery img { width: 100%; height: 100%; object-fit: cover; }
@@ -241,3 +241,20 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .cookie-actions { width: 100%; }
   .cookie-btn { flex: 1; }
 }
+
+.text-link { color: var(--navy); font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.text-link:hover { color: var(--navy-2); }
+.offer-card { display:flex; flex-direction:column; }
+.offer-card .text-link { margin-top:auto; padding-top:18px; }
+.offer-card p strong { color: var(--navy); }
+.muted-separator { color:#a18b69; padding:0 4px; }
+.btn-on-dark { color:#fff; background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.22); }
+.btn-on-dark:hover { background:rgba(255,255,255,.14); }
+.privacy-proof { max-width:850px; padding:30px 32px; border-radius:24px; background:#fff; border:1px solid var(--line); box-shadow:0 10px 35px rgba(16,36,61,.05); }
+.privacy-proof p:last-child { margin:0; color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.3rem,2.4vw,2rem); line-height:1.3; }
+.proof-panel { padding:36px; border-radius:28px; background:linear-gradient(135deg,#132d4a 0%,#0d2037 100%); color:white; box-shadow:var(--shadow); }
+.proof-panel h3 { margin:0 0 16px; font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.12; }
+.proof-panel p { margin:0; color:rgba(255,255,255,.76); }
+.writing-grid .card { min-height:290px; display:flex; flex-direction:column; }
+.writing-grid .text-link { margin-top:auto; padding-top:18px; }
+.signals-card { background:linear-gradient(145deg,#fff,#f7f0e3); }
